@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FishLogger — Privacy Policy</title>
+    <meta name="description" content="Privacy policy for the FishLogger fishing logbook app by Andromeda Tech." />
+    <style>
+      :root {
+        --bg: #0d1117;
+        --panel: #161b22;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --accent: #3b82f6;
+        --border: #30363d;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; }
+      header { border-bottom: 1px solid var(--border); padding-bottom: 22px; margin-bottom: 30px; }
+      h1 { font-size: 30px; margin: 0 0 6px; }
+      h2 { font-size: 20px; margin: 34px 0 10px; }
+      .logo { font-size: 22px; font-weight: 800; }
+      .updated { color: var(--muted); font-size: 14px; }
+      p, li { color: var(--text); }
+      a { color: var(--accent); }
+      ul { padding-left: 22px; }
+      li { margin: 6px 0; }
+      strong { color: #fff; }
+      .lead { color: var(--muted); }
+      footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">FishLogger 🎣</div>
+        <h1>Privacy Policy</h1>
+        <div class="updated">Last updated: June 21, 2026</div>
+      </header>
+
+      <p class="lead">
+        FishLogger ("the app") is a personal fishing logbook published by
+        <strong>Andromeda Tech</strong>. This policy explains what data the app collects,
+        why, and your choices. We keep it simple: your logbook is yours.
+      </p>
+
+      <h2>What we collect</h2>
+      <ul>
+        <li><strong>Account information.</strong> When you create an account we store your
+          <strong>email address</strong> (and an encrypted password) so you can sign in.
+          Authentication is handled by <a href="https://supabase.com">Supabase</a>. If you
+          sign in with Google or Apple, we receive your email and basic profile from that
+          provider to create your account.</li>
+        <li><strong>Your catches.</strong> Information you enter about a catch — species,
+          location name, bait, conditions, notes, the date/time, and an optional
+          <strong>photo</strong>.</li>
+        <li><strong>Location.</strong> If you tap "use my location" or drop a pin, we store the
+          <strong>coordinates</strong> you choose for that catch or hotspot. Location is only
+          accessed when you ask for it; the app does not track you in the background.</li>
+        <li><strong>Photos.</strong> Photos you attach to a catch are uploaded to private
+          storage. The app accesses your camera or photo library only when you choose to add a
+          photo.</li>
+      </ul>
+      <p>We do <strong>not</strong> collect analytics, advertising identifiers, or contacts,
+        and we do <strong>not</strong> track you across other apps or websites.</p>
+
+      <h2>How we use it</h2>
+      <p>Your data is used solely to provide the app's features — saving and showing your
+        catches, photos, and hotspots, and keeping you signed in. We do <strong>not</strong>
+        sell your data or share it with third parties for advertising.</p>
+
+      <h2>Where it's stored and who can see it</h2>
+      <ul>
+        <li>Data is stored on <strong>Supabase</strong> (Postgres database + file storage).</li>
+        <li><strong>Row-level security</strong> ensures each angler can only read or modify
+          their own catches, hotspots, and photos. Photos live in a <strong>private</strong>
+          bucket and are served only through short-lived signed links you generate.</li>
+        <li>Data is transmitted over encrypted connections (HTTPS).</li>
+        <li>Maps are provided by Google Maps / Apple Maps; weather (optional auto-fill) is
+          provided by Open-Meteo using the coordinates you select.</li>
+      </ul>
+
+      <h2>Your choices and rights</h2>
+      <ul>
+        <li><strong>Edit or delete</strong> any catch or hotspot from within the app at any time.</li>
+        <li><strong>Delete your account and all associated data</strong> by contacting us at the
+          email below; we will remove your account, catches, hotspots, and photos.</li>
+        <li>You can revoke camera, photo, or location permission at any time in your device
+          settings (some features won't work without them).</li>
+      </ul>
+
+      <h2>Children</h2>
+      <p>FishLogger is not directed to children under 13 and we do not knowingly collect data
+        from them.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this policy; material changes will be reflected by the "Last updated"
+        date above.</p>
+
+      <h2>Contact</h2>
+      <p>Questions or data-deletion requests:
+        <a href="mailto:omar.tabbaa@androm.tech">omar.tabbaa@androm.tech</a> (Andromeda Tech).</p>
+
+      <footer>© Andromeda Tech. FishLogger Privacy Policy.</footer>
+    </div>
+  </body>
+</html>
